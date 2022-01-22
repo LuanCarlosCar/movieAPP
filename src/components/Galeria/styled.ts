@@ -45,6 +45,12 @@ export const ContainerConteudo = styled.li`
     li:last-child{
         margin-bottom: 0;
     }
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        box-shadow: inset  0 0 1em red;
+
+    }
   
 `;
 export const ContainerImg = styled.img<fundoProps>`
@@ -75,6 +81,8 @@ export const Textdescription= styled.p`
     font-weight: 400;
     color: #C4C4C4;
     margin-bottom: 6px;
+
+
 `;
 export const TextPopularity =styled.p`
     font-family: 'Inter', sans-serif;
