@@ -3,7 +3,17 @@ interface fundoProps {
     fundo : string
 }
 
+export const ContainerGaleria = styled.section`
+    display: grid;
+    grid-template-areas:
+    'lista lista2'
+    'lista lista2'
+
+     ;
+     gap: 20px;
+`;
 export const ContainerLista = styled.ul`
+    grid-area: 'lista';
     width: 47.5625rem;
     height: 850px;
     flex: 1;
@@ -104,4 +114,61 @@ export const BtnLink = styled.a`
     background-color: #8257E6;
     box-sizing: border-box;
     
+`;
+export const ContainerSegundaLista = styled.div`
+    grid-area: 'lista2';
+
+`;
+export const CardFilmeGaleria = styled.li<fundoProps>`
+    background-image:url(${(props) => props.fundo});
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 338px;
+    height: 240px;
+    padding: 0 1.25rem;
+    box-sizing: border-box;
+    position: relative;
+    grid-area: 'normal';
+    margin-bottom: 1.25rem;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        box-shadow: inset 0 0 1em gold, 0 0 1em red;
+
+    }
+    span{
+        padding: 0.125rem 1.125rem;
+        box-sizing: border-box;
+        position: absolute;
+        margin-top: 0.625rem ;
+        background-color: #8257E6;
+        width: 4.375rem;
+        height: 1.25rem;
+        border-radius: 0.1875rem;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        font-size: 0.75rem;
+        color: #FEFBFB;
+    }
+    p{
+       position: absolute;
+       bottom: 0;
+       margin-bottom: 0.625rem;
+       font-family: 'Lexend Deca', sans-serif;
+       font-size: 0.8125rem;
+       font-weight: 400;
+       color: #FEFBFB;
+       line-height: 1.25rem;
+
+    }
+`;
+
+export const ContainerTitleGaleria = styled.h1`
+    font-family:'Lexend Deca', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    border-bottom: 3px solid #8257E6;
+    padding: 13px 0;
+    width: 240px;
+    margin-bottom: 20px;
 `;

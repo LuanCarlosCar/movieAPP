@@ -1,13 +1,14 @@
 import { ListaFilme } from "../../pages";
-import { ContainerConteudo, ContainerImg, ContainerLista, ContainerDetalhe, TextDetalhe, TextPopularity, Textdescription, BtnLink } from './styled';
+import { ContainerConteudo, ContainerImg, ContainerLista, ContainerDetalhe, TextDetalhe, TextPopularity, Textdescription, BtnLink, ContainerGaleria, ContainerSegundaLista, CardFilmeGaleria, ContainerTitleGaleria } from './styled';
 
 
 
 export default function Galeria({listaFilme }: ListaFilme ) {
     const url_img = 'https://image.tmdb.org/t/p/w500'
+    const item2 = listaFilme.slice(11,14)
     console.log(listaFilme)
     return(
-        <section>
+        <ContainerGaleria>
             <div>
                 <ContainerLista>
                 {listaFilme.map((filme)=>(
@@ -25,9 +26,14 @@ export default function Galeria({listaFilme }: ListaFilme ) {
 
                 </ContainerLista>
             </div>
-            <div>
-
-            </div>
-        </section>
+            <ContainerSegundaLista>
+                    <ContainerTitleGaleria>Lorem ipsum</ContainerTitleGaleria>
+                    <ul>
+                    {item2.map((filme)=>(
+                        <CardFilmeGaleria key={filme.id} fundo={url_img + filme.backdrop_path}><span>Status</span> <p>{filme.original_title}</p></CardFilmeGaleria>
+                    ))}
+                    </ul>
+            </ContainerSegundaLista>
+        </ContainerGaleria>
     )
 }
