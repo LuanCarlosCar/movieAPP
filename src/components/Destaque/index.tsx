@@ -2,6 +2,7 @@ import { DestaqueTitle, DestaqueText, DestaqueContainer, DestaqueCardFilme, Card
 import { ListaFilme } from '../../pages/index';
 
 
+
 export default function Destaque({listaFilme }: ListaFilme ){
 
     const url_img = 'https://image.tmdb.org/t/p/w500'
@@ -18,11 +19,14 @@ export default function Destaque({listaFilme }: ListaFilme ){
             <DestaqueText>O Naped pode ser sua fonte de informações sobre <br/> o mundo nerd e outros assuntos relacionados</DestaqueText>
             
             <ul>
-                {item1.map((filme)=>(
+                {item1.map((filme)=>( 
+                  
                     <DestaqueCardFilme key={filme.id} fundo={url_img + filme.backdrop_path}>
                         <span>Status</span>
                         <p>{filme.original_title}</p>
-                        </DestaqueCardFilme>))}
+                        </DestaqueCardFilme>
+
+                    ))}
 
                 <div>
                     {item2.map((filme)=>(

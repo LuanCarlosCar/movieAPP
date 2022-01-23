@@ -11,6 +11,7 @@ import {ContainerMenuLateral} from './styled'
 import Logo from '../assets/img/Naped.svg'
 import Image from 'next/image';
 import MenuIcon from '@mui/icons-material/Menu';
+import Link from "next/link";
 
 export default function MenuListComposition() {
   const [open, setOpen] = React.useState(false);
@@ -95,12 +96,13 @@ export default function MenuListComposition() {
                       fontSize: 30,
                       color: 'black'
                       
-                    }}>Home</MenuItem>
+                    }}><Link href='/'><a>Marvel</a></Link>
+                    </MenuItem>
                     <MenuItem onClick={handleClose} sx={{
                       fontSize: 30,
                       color: 'black'
                       
-                    }}>Series</MenuItem>
+                    }}><Link href='/dc'><a>DC</a></Link></MenuItem>
                     <MenuItem onClick={handleClose} sx={{
                       fontSize: 30,
                       color: 'black'

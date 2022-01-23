@@ -5,6 +5,7 @@ export const ContainerFooter = styled.footer`
     justify-content: center;
     width: 55%;
     margin: auto;
+    height: 100px;
   
     p{
         font-family: 'Inter', sans-serif;
