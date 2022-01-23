@@ -5,8 +5,8 @@ export interface fundoProps{
 }
 export const NavBar = styled.nav`
     position: absolute;
-    height: 100vh;
-    width: 70vw;
+    height: 1580px;
+    width: 650px;
     background-color: red;
     z-index: 99;
 `;
