@@ -27,7 +27,7 @@ export default function Galeria({listaFilme, listaFilme2 }: ListaFilme ) {
                 </ContainerLista>
             
             <ContainerSegundaLista>
-                    <ContainerTitleGaleria>Lorem ipsum</ContainerTitleGaleria>
+                    <ContainerTitleGaleria>Favoritos</ContainerTitleGaleria>
                     <ul>
                     {item2.map((filme)=>(
                         <CardFilmeGaleria key={filme.id} fundo={url_img + filme.backdrop_path}><span>Status</span> <p>{filme.original_title}</p></CardFilmeGaleria>
@@ -36,7 +36,7 @@ export default function Galeria({listaFilme, listaFilme2 }: ListaFilme ) {
             </ContainerSegundaLista>
             </ContainerGrid>
 
-            <ContainerTitleGaleria>Lorem ipsum</ContainerTitleGaleria>
+            <ContainerTitleGaleria>Recomendado</ContainerTitleGaleria>
                     <ContainerGaleria2>
                     {item3.map((filme)=>(
                         <CardFilmeGaleria2 key={filme.id} fundo={url_img + filme.backdrop_path}><span>Status</span> <p>{filme.original_title}</p></CardFilmeGaleria2>

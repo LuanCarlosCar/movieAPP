@@ -1,0 +1,15 @@
+Tarefa:
+[X] organizar pasta
+[X] instalar typescript
+[X] instalar dependencias {axios e styled-components}
+[X] import fonts
+[X] criar arquivo img 
+[X] analisar projeto figma novamente
+[X] desktop first
+	[X] header
+	[X] main
+		[X] seção destaque
+		[X] seção lista [X] seção recomendado
+		[X] filmes mais recentes
+	[X] footer
+[] responsividade
