@@ -8,3 +8,15 @@
   margin: auto;
   color: #ffff;
 }
+.imgMenuLogo{
+  width: 100px;
+  height: 200px;
+}
+
+
+  @media (max-width: 1148px) {
+    .containerMain{
+        padding: 20px;
+    }
+    
+  }

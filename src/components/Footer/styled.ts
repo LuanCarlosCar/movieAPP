@@ -2,8 +2,10 @@ import styled from 'styled-components';
 
 export const ContainerFooter = styled.footer`
     text-align: center;
-    margin-top: 15px ;
-    height: 110px;
+    justify-content: center;
+    width: 55%;
+    margin: auto;
+  
     p{
         font-family: 'Inter', sans-serif;
         font-weight: 500;

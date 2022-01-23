@@ -16,6 +16,13 @@ export const DestaqueContainer = styled.section`
         
         
     }
+    @media (max-width: 1148px) {
+    &{
+      
+        margin-top: 0;
+    }
+    
+  }
 `;
 export const DestaqueTitle = styled.h1`
     font-family: 'Lexend Deca', sans-serif;
@@ -47,6 +54,13 @@ export const DestaqueCardFilme = styled.li<fundoProps>`
     grid-area: 'destaque';
     transition: .3s;
     cursor: pointer;
+    @media (max-width: 1148px) {
+    &{
+        width: 47.4rem;
+        height: 20rem;
+    }
+    
+  }
     &:hover{
         box-shadow: inset 0 0 1em gold, 0 0 1em red;
 
@@ -93,6 +107,13 @@ export const CardFilme = styled.li<fundoProps>`
     margin-bottom: 1.25rem;
     cursor: pointer;
     transition: .3s;
+    @media (max-width: 1148px) {
+        &{
+            width: 19rem;
+            height: 9.4rem;
+        }
+    
+    }
     &:hover{
         box-shadow: inset 0 0 1em gold, 0 0 1em red;
 

@@ -25,6 +25,13 @@ export const ContainerLista = styled.ul`
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
     scroll-padding: 10px;
+    @media (max-width: 1148px) {
+    &{
+      
+        height: 800px;
+    }
+    
+  }
     &::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -127,8 +134,8 @@ export const CardFilmeGaleria = styled.li<fundoProps>`
     background-image:url(${(props) => props.fundo});
     background-repeat: no-repeat;
     background-size: cover;
-    width: 338px;
-    height: 240px;
+    width: 21.75rem;
+    height: 15rem;
     padding: 0 1.25rem;
     box-sizing: border-box;
     position: relative;
@@ -136,6 +143,13 @@ export const CardFilmeGaleria = styled.li<fundoProps>`
     margin-bottom: 1.25rem;
     cursor: pointer;
     transition: .3s;
+    @media (max-width: 1148px) {
+    &{
+        width: 17rem;
+        height: 12rem;
+    }
+    
+  }
     &:hover{
         box-shadow: inset 0 0 1em gold, 0 0 1em red;
 

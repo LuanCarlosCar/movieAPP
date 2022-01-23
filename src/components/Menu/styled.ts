@@ -1,39 +1,19 @@
-import styled from 'styled-components';
-export const ContainerHeader = styled.header`
-    width: 70rem;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.9375rem;
-    @media (max-width: 1148px) {
-    &{
-        padding: 20px;
-    }
-    
-  }
-  @media (max-width: 500px) {
-    &{
-        display: none;
-    }
-    
-  }
-
-`
+import styled from "styled-components";
+import Image from 'next/image';
+export interface fundoProps{
+    fundo:string
+}
+export const NavBar = styled.nav`
+    position: absolute;
+    height: 100vh;
+    width: 70vw;
+    background-color: red;
+    z-index: 99;
+`;
 export const ContainerLinks = styled.ul`
-    display: flex;
     align-items: center;
     justify-content: center;
 
- 
-    li:nth-last-child(n+3){
-        margin-right: 3.75rem;
-
-    }
-    li:last-child{
-        margin-right:0;
-        margin-left: 5.25rem;
-    }
     li:first-child{
         a{
             color: #FEFBFB;
@@ -69,4 +49,12 @@ export const ItemLinkDestaque = styled.a`
         background-color: #8257E6;
 
     }
+`;
+
+export const ContainerImgMenu = styled.div`
+    background-color: black ;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    text-align: center;
 `;
