@@ -10,6 +10,7 @@ import Stack from '@mui/material/Stack';
 import {ContainerMenuLateral} from './styled'
 import Logo from '../assets/img/Naped.svg'
 import Image from 'next/image';
+import MenuIcon from '@mui/icons-material/Menu';
 
 export default function MenuListComposition() {
   const [open, setOpen] = React.useState(false);
@@ -63,7 +64,7 @@ export default function MenuListComposition() {
             
           }}
         >
-         Menu
+         <MenuIcon />
         </Button>
         <Popper
           open={open}
@@ -89,36 +90,38 @@ export default function MenuListComposition() {
                     aria-labelledby="composition-button"
                     onKeyDown={handleListKeyDown}
                   >
+
                     <MenuItem onClick={handleClose} sx={{
-                      fontSize: 40,
-                      color: 'black'
-                      
-                    }}><Image src={Logo} /></MenuItem>
-                    <MenuItem onClick={handleClose} sx={{
-                      fontSize: 40,
+                      fontSize: 30,
                       color: 'black'
                       
                     }}>Home</MenuItem>
                     <MenuItem onClick={handleClose} sx={{
-                      fontSize: 40,
+                      fontSize: 30,
                       color: 'black'
                       
                     }}>Series</MenuItem>
                     <MenuItem onClick={handleClose} sx={{
-                      fontSize: 40,
+                      fontSize: 30,
                       color: 'black'
                       
                     }}>Filmes</MenuItem>
                     <MenuItem onClick={handleClose} sx={{
-                      fontSize: 40,
+                      fontSize: 30,
                       color: 'black'
                       
                     }}>Animes</MenuItem>
                     <MenuItem onClick={handleClose} sx={{
-                      fontSize: 40,
+                      fontSize: 30,
                       color: 'black'
                       
                     }}>Games</MenuItem>
+                    <MenuItem onClick={handleClose} sx={{
+                      fontSize: 30,
+                      color: '#8257E6',
+                      
+                      
+                    }}>Cadastrar</MenuItem>
                   </MenuList>
                 </ClickAwayListener>
               </Paper>
@@ -127,6 +130,10 @@ export default function MenuListComposition() {
         </Popper>
       </div>
     </Stack>
+    <span>
+    <Image src={Logo} />
+    </span>
+    
     </ContainerMenuLateral>
   );
 }

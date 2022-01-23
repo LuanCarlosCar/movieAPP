@@ -22,8 +22,7 @@
   @media (max-width: 500px) {
     .containerMain{
       width: 90%;
-      border: 2px solid red;
-      box-sizing: border-box;
+
       padding: 0;
     }
 }

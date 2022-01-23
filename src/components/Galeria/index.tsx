@@ -8,7 +8,7 @@ export default function Galeria({listaFilme, listaFilme2 }: ListaFilme ) {
     const item2 = listaFilme.slice(11,14)
     const item3 = listaFilme2.slice(0,9)
     const item4 =listaFilme2.slice(0,3)
-    const item5 =listaFilme2.slice(4,6)
+    const item5 =listaFilme2.slice(4,7)
     return(
         <ContainerGaleria>
             <ContainerGrid>

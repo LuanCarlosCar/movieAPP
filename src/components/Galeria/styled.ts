@@ -248,8 +248,7 @@ export const ContainerGaleria2 = styled.ul`
     }
 `;
 export const ContainerGaleriaMobile = styled.ul`
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    display: none;
     @media (max-width: 500px) {
         overflow-x: scroll;
   scroll-snap-type: x mandatory;
