@@ -13,10 +13,11 @@ export interface Filme{
   
 }
 export interface ListaFilme{
-  listaFilme: Filme[]
+  listaFilme: Filme[],
+  listaFilme2?: Filme[],
 }
 
-export default function Home({listaFilme} : ListaFilme) {
+export default function Home({listaFilme, listaFilme2} : ListaFilme) {
   return (
     <div className={styles.container}>
       <Head>
@@ -30,7 +31,7 @@ export default function Home({listaFilme} : ListaFilme) {
       <Header />
       <main className={styles.containerMain}>
         <Destaque listaFilme={listaFilme}/>
-        <Galeria listaFilme={listaFilme} />
+        <Galeria listaFilme={listaFilme} listaFilme2={listaFilme2} />
         
       </main>
       
@@ -41,9 +42,12 @@ export default function Home({listaFilme} : ListaFilme) {
 export async function getStaticProps(){
 
   const response = await fetch('https://api.themoviedb.org/4/list/1?api_key=4e9cbdb6188d564ab3062e486d67953a')
+  const response2 = await fetch('https://api.themoviedb.org/4/list/3?api_key=4e9cbdb6188d564ab3062e486d67953a')
 
  const dado = await response.json()
+ const dado2 = await response2.json()
  return {
-     props:{listaFilme:dado.results}
+     props:{listaFilme:dado.results, listaFilme2: dado2.results}
  }
 }
+

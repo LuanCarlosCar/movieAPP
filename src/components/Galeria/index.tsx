@@ -1,15 +1,16 @@
 import { ListaFilme } from "../../pages";
-import { ContainerConteudo, ContainerImg, ContainerLista, ContainerDetalhe, TextDetalhe, TextPopularity, Textdescription, BtnLink, ContainerGaleria, ContainerSegundaLista, CardFilmeGaleria, ContainerTitleGaleria } from './styled';
+import { ContainerConteudo, ContainerImg, ContainerLista, ContainerDetalhe, TextDetalhe, TextPopularity, Textdescription, BtnLink, ContainerGaleria, ContainerSegundaLista, CardFilmeGaleria, ContainerTitleGaleria, CardFilmeGaleria2, ContainerGaleria2, ContainerGrid } from './styled';
 
 
 
-export default function Galeria({listaFilme }: ListaFilme ) {
+export default function Galeria({listaFilme, listaFilme2 }: ListaFilme ) {
     const url_img = 'https://image.tmdb.org/t/p/w500'
     const item2 = listaFilme.slice(11,14)
-    console.log(listaFilme)
+    const item3 = listaFilme2.slice(0,9)
+    console.log(listaFilme2)
     return(
         <ContainerGaleria>
-            <div>
+            <ContainerGrid>
                 <ContainerLista>
                 {listaFilme.map((filme)=>(
                     <ContainerConteudo key={filme.id}>
@@ -25,7 +26,7 @@ export default function Galeria({listaFilme }: ListaFilme ) {
                     ))}
 
                 </ContainerLista>
-            </div>
+            
             <ContainerSegundaLista>
                     <ContainerTitleGaleria>Lorem ipsum</ContainerTitleGaleria>
                     <ul>
@@ -34,6 +35,14 @@ export default function Galeria({listaFilme }: ListaFilme ) {
                     ))}
                     </ul>
             </ContainerSegundaLista>
+            </ContainerGrid>
+
+            <ContainerTitleGaleria>Lorem ipsum</ContainerTitleGaleria>
+                    <ContainerGaleria2>
+                    {item3.map((filme)=>(
+                        <CardFilmeGaleria2 key={filme.id} fundo={url_img + filme.backdrop_path}><span>Status</span> <p>{filme.original_title}</p></CardFilmeGaleria2>
+                    ))}
+                    </ContainerGaleria2>
         </ContainerGaleria>
     )
 }
