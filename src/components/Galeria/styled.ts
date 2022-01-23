@@ -181,8 +181,8 @@ export const CardFilmeGaleria2 = styled.li<fundoProps>`
     background-image:url(${(props) => props.fundo});
     background-repeat: no-repeat;
     background-size: cover;
-    width: 338px;
-    height: 240px;
+    width: 350px;
+    height: 210px;
     padding: 0 1.25rem;
     box-sizing: border-box;
     position: relative;

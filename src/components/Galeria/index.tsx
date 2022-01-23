@@ -7,7 +7,6 @@ export default function Galeria({listaFilme, listaFilme2 }: ListaFilme ) {
     const url_img = 'https://image.tmdb.org/t/p/w500'
     const item2 = listaFilme.slice(11,14)
     const item3 = listaFilme2.slice(0,9)
-    console.log(listaFilme2)
     return(
         <ContainerGaleria>
             <ContainerGrid>

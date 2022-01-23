@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import Destaque from '../components/Destaque'
+import Footer from '../components/Footer'
 import Galeria from '../components/Galeria'
 import Header from '../components/Header'
 export interface Filme{
@@ -34,6 +35,7 @@ export default function Home({listaFilme, listaFilme2} : ListaFilme) {
         <Galeria listaFilme={listaFilme} listaFilme2={listaFilme2} />
         
       </main>
+      <Footer />
       
     </div>
   )
