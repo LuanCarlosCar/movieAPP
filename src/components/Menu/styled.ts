@@ -4,30 +4,35 @@ export interface fundoProps{
     fundo:string
 }
 export const NavBar = styled.nav`
-    position: absolute;
-    height: 1580px;
+    position: fixed;
+    height: 1710px;
     width: 650px;
-    background-color: red;
+    background-color: #8257E6;
     z-index: 99;
 `;
 export const ContainerLinks = styled.ul`
     align-items: center;
     justify-content: center;
+    text-align: center;
+    li{
+        margin-bottom: 50px;
+    }
 
     li:first-child{
         a{
-            color: #FEFBFB;
+            color: #13131F;
             border-bottom: 0.125rem solid #8257E6;
             box-sizing: border-box;
+            
 
         }
     }
 `;
 export const ItemLink = styled.a`
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    font-size: 70px;
     font-weight: 500;
-    color: #c4c4c4;
+    color: #13131F;
     transition: .3s;
     cursor: pointer;
     &:hover{
@@ -36,10 +41,10 @@ export const ItemLink = styled.a`
 `;
 export const ItemLinkDestaque = styled.a`
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 0.875rem;
+    font-size: 70px;
     font-weight: 500;
-    color: #FEFBFB;
-    border: 0.125rem solid #8257E6;
+    color: #13131F;
+    border: 0.125rem solid black;
     box-sizing: border-box;
     padding: 0.3125rem 1.25rem;
     border-radius: 1.875rem;
@@ -54,7 +59,9 @@ export const ItemLinkDestaque = styled.a`
 export const ContainerImgMenu = styled.div`
     background-color: black ;
     width: 100%;
-    height: 100px;
+    height: 200px;
     align-items: center;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 `;

@@ -12,7 +12,7 @@ export default function Menu(){
             <Image       
                 
                 alt="Picture of the author"
-                width={250}
+                width={260}
                 height={100} src={Logo} />
             </ContainerImgMenu>
             <ContainerLinks>
