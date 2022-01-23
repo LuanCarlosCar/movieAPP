@@ -12,7 +12,7 @@ export const ContainerHeader = styled.header`
     }
     
   }
-  @media (max-width: 500px) {
+  @media (max-width: 720px) {
     &{
         display: none;
     }

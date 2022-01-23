@@ -13,7 +13,7 @@ export const ContainerFooter = styled.footer`
         line-height: 24px;
         color: #C4C4C4;
     }
-    @media (max-width: 500px) {
+    @media (max-width: 700px) {
         width: 90%;
     }
 `;

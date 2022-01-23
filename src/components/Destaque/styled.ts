@@ -24,7 +24,7 @@ export const DestaqueContainer = styled.section`
     }
     
   }
-  @media (max-width: 500px) {
+  @media (max-width: 720px) {
         ul{display: block;}
     }
         
@@ -67,7 +67,7 @@ export const DestaqueCardFilme = styled.li<fundoProps>`
     }
     
   }
-  @media (max-width: 500px) {
+  @media (max-width: 720px) {
         width: 100%;
         margin-bottom: 20px;
     }
@@ -154,7 +154,7 @@ export const CardFilme = styled.li<fundoProps>`
        line-height: 1.25rem;
 
     }
-    @media (max-width: 500px) {
+    @media (max-width: 720px) {
         display: none;
     }
         

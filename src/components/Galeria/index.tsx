@@ -6,7 +6,7 @@ import { ContainerConteudo, ContainerGaleriaMobile, ContainerImg, ContainerLista
 export default function Galeria({listaFilme, listaFilme2 }: ListaFilme ) {
     const url_img = 'https://image.tmdb.org/t/p/w500'
     const item2 = listaFilme.slice(11,14)
-    const item3 = listaFilme2.slice(0,9)
+    const item3 = listaFilme2.slice(0,6)
     const item4 =listaFilme2.slice(0,3)
     const item5 =listaFilme2.slice(4,7)
     return(

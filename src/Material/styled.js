@@ -5,7 +5,7 @@ export const ContainerMenuLateral= styled.div`
     z-index: 99;
     position: relative;
     margin-left:0 ;
-    @media (max-width: 500px) {
+    @media (max-width: 720px) {
         padding: 10px 0px;
         display: flex;
         justify-content: space-between;
