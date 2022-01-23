@@ -32,6 +32,9 @@ export const ContainerLista = styled.ul`
     }
     
   }
+  @media (max-width: 500px) {
+      display: none;
+  }
     &::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -128,6 +131,9 @@ export const BtnLink = styled.a`
 `;
 export const ContainerSegundaLista = styled.div`
     grid-area: 'lista2';
+    @media (max-width: 500px) {
+        display: none;
+    }
 
 `;
 export const CardFilmeGaleria = styled.li<fundoProps>`
@@ -237,4 +243,23 @@ export const CardFilmeGaleria2 = styled.li<fundoProps>`
 export const ContainerGaleria2 = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
+    @media (max-width: 500px) {
+        display: none;
+    }
+`;
+export const ContainerGaleriaMobile = styled.ul`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    @media (max-width: 500px) {
+        overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 20px;
+
+  /* visual styling */
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 10px;
+  padding-left: 20px;
+    }
 `;

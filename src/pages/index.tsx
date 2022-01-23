@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Galeria from '../components/Galeria'
 import Header from '../components/Header'
 import Menu from '../components/Menu'
+import MenuListComposition from '../Material/Menu'
 export interface Filme{
   
   id: number,
@@ -30,8 +31,8 @@ export default function Home({listaFilme, listaFilme2} : ListaFilme) {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend+Deca&display=swap" rel="stylesheet" />
       </Head>
-      <Menu />
       <Header />
+      <MenuListComposition />
       <main className={styles.containerMain}>
      
         <Destaque listaFilme={listaFilme}/>

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 interface fundoProps {
     fundo : string
 }
+
 export const DestaqueContainer = styled.section`
     margin-top: 7.125rem;
     ul{
@@ -23,6 +24,10 @@ export const DestaqueContainer = styled.section`
     }
     
   }
+  @media (max-width: 500px) {
+        ul{display: block;}
+    }
+        
 `;
 export const DestaqueTitle = styled.h1`
     font-family: 'Lexend Deca', sans-serif;
@@ -53,6 +58,7 @@ export const DestaqueCardFilme = styled.li<fundoProps>`
     position: relative;
     grid-area: 'destaque';
     transition: .3s;
+    z-index: 1;
     cursor: pointer;
     @media (max-width: 1148px) {
     &{
@@ -61,6 +67,11 @@ export const DestaqueCardFilme = styled.li<fundoProps>`
     }
     
   }
+  @media (max-width: 500px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+        
     &:hover{
         box-shadow: inset 0 0 1em gold, 0 0 1em red;
 
@@ -143,5 +154,9 @@ export const CardFilme = styled.li<fundoProps>`
        line-height: 1.25rem;
 
     }
+    @media (max-width: 500px) {
+        display: none;
+    }
+        
 `;
 

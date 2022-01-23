@@ -1,5 +1,5 @@
 import { ListaFilme } from "../../pages";
-import { ContainerConteudo, ContainerImg, ContainerLista, ContainerDetalhe, TextDetalhe, TextPopularity, Textdescription, BtnLink, ContainerGaleria, ContainerSegundaLista, CardFilmeGaleria, ContainerTitleGaleria, CardFilmeGaleria2, ContainerGaleria2, ContainerGrid } from './styled';
+import { ContainerConteudo, ContainerGaleriaMobile, ContainerImg, ContainerLista, ContainerDetalhe, TextDetalhe, TextPopularity, Textdescription, BtnLink, ContainerGaleria, ContainerSegundaLista, CardFilmeGaleria, ContainerTitleGaleria, CardFilmeGaleria2, ContainerGaleria2, ContainerGrid } from './styled';
 
 
 
@@ -7,6 +7,8 @@ export default function Galeria({listaFilme, listaFilme2 }: ListaFilme ) {
     const url_img = 'https://image.tmdb.org/t/p/w500'
     const item2 = listaFilme.slice(11,14)
     const item3 = listaFilme2.slice(0,9)
+    const item4 =listaFilme2.slice(0,3)
+    const item5 =listaFilme2.slice(4,6)
     return(
         <ContainerGaleria>
             <ContainerGrid>
@@ -42,6 +44,16 @@ export default function Galeria({listaFilme, listaFilme2 }: ListaFilme ) {
                         <CardFilmeGaleria2 key={filme.id} fundo={url_img + filme.backdrop_path}><span>Status</span> <p>{filme.original_title}</p></CardFilmeGaleria2>
                     ))}
                     </ContainerGaleria2>
+                    <ContainerGaleriaMobile>
+                    {item4.map((filme)=>(
+                        <CardFilmeGaleria2 key={filme.id} fundo={url_img + filme.backdrop_path}><span>Status</span> <p>{filme.original_title}</p></CardFilmeGaleria2>
+                    ))}
+                    </ContainerGaleriaMobile>
+                    <ContainerGaleriaMobile>
+                    {item5.map((filme)=>(
+                        <CardFilmeGaleria2 key={filme.id} fundo={url_img + filme.backdrop_path}><span>Status</span> <p>{filme.original_title}</p></CardFilmeGaleria2>
+                    ))}
+                    </ContainerGaleriaMobile>
         </ContainerGaleria>
     )
 }

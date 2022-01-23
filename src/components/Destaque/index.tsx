@@ -1,13 +1,17 @@
 import { DestaqueTitle, DestaqueText, DestaqueContainer, DestaqueCardFilme, CardFilme } from './styled';
 import { ListaFilme } from '../../pages/index';
 
+
 export default function Destaque({listaFilme }: ListaFilme ){
+
     const url_img = 'https://image.tmdb.org/t/p/w500'
     const item1 = listaFilme.slice(10,11)
     const item2 = listaFilme.slice(3,5)
+    
  
     return(
-        <DestaqueContainer>
+
+            <DestaqueContainer >
             
             
             <DestaqueTitle>Mundo nerd? <br/>Naped!</DestaqueTitle>
@@ -27,6 +31,8 @@ export default function Destaque({listaFilme }: ListaFilme ){
                 </div>
             </ul>
         </DestaqueContainer>
+        
+
     )
 }
 

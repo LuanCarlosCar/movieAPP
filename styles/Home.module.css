@@ -13,10 +13,18 @@
   height: 200px;
 }
 
-
   @media (max-width: 1148px) {
     .containerMain{
         padding: 20px;
     }
     
   }
+  @media (max-width: 500px) {
+    .containerMain{
+      width: 90%;
+      border: 2px solid red;
+      box-sizing: border-box;
+      padding: 0;
+    }
+}
+    
